@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[SYSTEM] Formulario — INPUT MODULE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="matrix-canvas"></canvas>
+<header>
+  <img src="./img/images.png" alt="logo">
+  <h1>// ETIQUETAS HTML — SISTEMA ACTIVO</h1>
+  <nav>
+    <a href="contenedor.html">Contenedor</a>
+    <a href="lista.html">Listas</a>
+    <a href="tabla.html">Tablas</a>
+    <a href="formulario.html">Formulario</a>
+    <a href="boostrap.html">Bootstrap</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="index.html">[INICIO]</a>
+  </nav>
+</header>
+<main>
+  <h1>&gt; MÓDULO: INPUT DE DATOS</h1>
+  <form>
+    <label>// NOMBRE</label>
+    <input type="text" placeholder=">> INGRESAR NOMBRE">
+    <label>// APELLIDO</label>
+    <input type="text" placeholder=">> INGRESAR APELLIDO">
+    <label>// EDAD</label>
+    <input type="text" placeholder=">> INGRESAR EDAD">
+    <label>// EMAIL</label>
+    <input type="email" placeholder=">> user@system.io">
+    <label>// FECHA DE NACIMIENTO</label>
+    <input type="datetime-local">
+    <label>// GÉNERO</label>
+    <div style="margin-top:8px">
+      <input type="checkbox" id="m"><label for="m" style="display:inline;margin:0;letter-spacing:1px;text-transform:none;font-size:13px;color:var(--purple)">MASCULINO</label>
+      <input type="checkbox" id="f" style="margin-left:20px"><label for="f" style="display:inline;margin:0;letter-spacing:1px;text-transform:none;font-size:13px;color:var(--purple)">FEMENINO</label>
+    </div>
+    <label>// ROL EN SISTEMA</label>
+    <select>
+      <option>[ SELECCIONAR MÓDULO ]</option>
+      <option>DEV — FRONTEND</option>
+      <option>DEV — BACKEND</option>
+      <option>LÍDER DE EQUIPO</option>
+      <option>SENIOR PYTHON</option>
+    </select>
+    <input type="button" value="[ EJECUTAR GUARDADO ]">
+  </form>
+</main>
+<script src="matrix.js"></script>
+</body>
+</html>

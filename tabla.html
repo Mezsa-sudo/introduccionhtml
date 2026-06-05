@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[SYSTEM] Tabla — DATA TABLE</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .table-wrap { position:relative; z-index:5; padding:40px 28px; }
+    caption {
+      font-family:'Orbitron',monospace; font-size:10px; letter-spacing:3px;
+      text-transform:uppercase; color:var(--dim); margin-bottom:12px;
+      caption-side:top; text-align:left; padding-left:4px;
+    }
+  </style>
+</head>
+<body>
+<canvas id="matrix-canvas"></canvas>
+<header>
+  <img src="./img/images.png" alt="logo">
+  <h1>// ETIQUETAS HTML — SISTEMA ACTIVO</h1>
+  <nav>
+    <a href="contenedor.html">Contenedor</a>
+    <a href="lista.html">Listas</a>
+    <a href="tabla.html">[Tablas]</a>
+    <a href="formulario.html">Formulario</a>
+    <a href="boostrap.html">Bootstrap</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="index.html">Inicio</a>
+  </nav>
+</header>
+<div class="table-wrap">
+  <h1>&gt; MÓDULO: TABLA DE DATOS</h1>
+  <table>
+    <caption>// database.query — registros activos</caption>
+    <tr>
+      <th>NOMBRE</th>
+      <th>APELLIDO</th>
+      <th>EDAD</th>
+    </tr>
+    <tr>
+      <td>Arturo</td>
+      <td>Heredia</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>Emir</td>
+      <td>Olmos</td>
+      <td>17</td>
+    </tr>
+  </table>
+</div>
+<script src="matrix.js"></script>
+</body>
+</html>

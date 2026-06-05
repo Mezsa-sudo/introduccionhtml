@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[SYSTEM] Contenedor — BOX MODEL</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .box-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:16px; margin:24px 0; }
+    .cbox { background:rgba(30,0,50,0.85); border:1px solid rgba(180,79,255,0.3); padding:20px; text-align:center; position:relative; transition:all 0.2s; }
+    .cbox:hover { border-color:var(--purple); box-shadow:0 0 16px rgba(180,79,255,0.3); }
+    .cbox p { font-size:13px; color:var(--purple); }
+    .cbox::after { content:attr(data-id); position:absolute; top:4px; right:8px; font-size:9px; color:var(--dim); letter-spacing:1px; }
+    .parent-box { background:rgba(30,0,50,0.9); border:1px solid rgba(212,0,255,0.4); padding:20px; margin-top:16px; }
+    .child-row { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    .child-box { background:rgba(212,0,255,0.05); border:1px dashed rgba(212,0,255,0.3); padding:16px; text-align:center; transition:all 0.2s; }
+    .child-box:hover { border-color:#d400ff; background:rgba(212,0,255,0.1); }
+  </style>
+</head>
+<body>
+<canvas id="matrix-canvas"></canvas>
+<header>
+  <img src="./img/images.png" alt="logo">
+  <h1>// ETIQUETAS HTML — SISTEMA ACTIVO</h1>
+  <nav>
+    <a href="contenedor.html">[Contenedor]</a>
+    <a href="lista.html">Listas</a>
+    <a href="tabla.html">Tablas</a>
+    <a href="formulario.html">Formulario</a>
+    <a href="boostrap.html">Bootstrap</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="index.html">Inicio</a>
+  </nav>
+</header>
+<main>
+  <h1>&gt; MÓDULO: MODELADO DE CAJA</h1>
+  <div class="box-grid">
+    <div class="cbox" data-id="NODE_01"><p>&gt; Contenedor Centro</p></div>
+    <div class="cbox" data-id="NODE_02"><p>&gt; Contenedor Izquierda</p></div>
+    <div class="cbox" data-id="NODE_03"><p>&gt; Contenedor Derecha</p></div>
+  </div>
+  <div class="parent-box">
+    <h2>&gt; CONTENEDOR PADRE</h2>
+    <div class="child-row">
+      <div class="child-box"><h3>&gt; HIJO [0x01]</h3></div>
+      <div class="child-box"><h3>&gt; HIJO [0x02]</h3></div>
+    </div>
+  </div>
+</main>
+<script src="matrix.js"></script>
+</body>
+</html>

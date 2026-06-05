@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[SYSTEM] Contenedor — BOX MODEL ALT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="matrix-canvas"></canvas>
+<header>
+  <img src="./img/images.png" alt="logo">
+  <h1>// ETIQUETAS HTML — SISTEMA ACTIVO</h1>
+  <nav>
+    <a href="contenedor.html">Contenedor</a>
+    <a href="lista.html">Listas</a>
+    <a href="tabla.html">Tablas</a>
+    <a href="formulario.html">[Formulario]</a>
+    <a href="boostrap.html">Bootstrap</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="index.html">Inicio</a>
+  </nav>
+</header>
+<main>
+  <h1>&gt; MÓDULO: MODELADO DE CAJA</h1>
+  <div style="background:rgba(30,0,50,0.8);border:1px solid var(--border);padding:20px;margin-bottom:14px">
+    <p>&gt; Contenedor centro — STATUS: ONLINE</p>
+  </div>
+  <div style="background:rgba(30,0,50,0.8);border:1px solid var(--border);padding:20px;margin-bottom:14px">
+    <p>&gt; Contenedor izquierda — STATUS: ONLINE</p>
+  </div>
+  <div style="background:rgba(30,0,50,0.8);border:1px solid var(--border);padding:20px;margin-bottom:14px">
+    <p>&gt; Contenedor derecha — STATUS: ONLINE</p>
+  </div>
+  <div style="background:rgba(30,0,50,0.9);border:1px solid rgba(212,0,255,0.4);padding:24px">
+    <h2>&gt; CONTENEDOR PADRE</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px">
+      <div style="border:1px dashed rgba(212,0,255,0.35);padding:16px;text-align:center"><h3>HIJO [A]</h3></div>
+      <div style="border:1px dashed rgba(212,0,255,0.35);padding:16px;text-align:center"><h3>HIJO [B]</h3></div>
+    </div>
+  </div>
+</main>
+<script src="matrix.js"></script>
+</body>
+</html>
