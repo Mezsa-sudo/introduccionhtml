@@ -1,45 +1,83 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>[SYSTEM] Contenedor — BOX MODEL ALT</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        form{
+            background-color: gray;
+            margin-left: 500px;
+            width: 350px;
+            height: 250px;
+            margin-top: 15px;
+            border: 2px solid white;
+            box-shadow: 0 5px 8px black;
+        }
+
+        form h1{
+            color: wheat;
+            text-align: center;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        form label{
+            color:wheat;
+        }
+
+        form button{
+            background-color: orangered;
+            color: white;
+            font-size: 20px;
+            margin-left: 100px;
+            padding: 5px;
+        }
+    
+    </style>
 </head>
 <body>
-<canvas id="matrix-canvas"></canvas>
-<header>
-  <img src="./img/images.png" alt="logo">
-  <h1>// ETIQUETAS HTML — SISTEMA ACTIVO</h1>
-  <nav>
-    <a href="contenedor.html">Contenedor</a>
-    <a href="lista.html">Listas</a>
-    <a href="tabla.html">Tablas</a>
-    <a href="formulario.html">[Formulario]</a>
-    <a href="boostrap.html">Bootstrap</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="index.html">Inicio</a>
-  </nav>
-</header>
-<main>
-  <h1>&gt; MÓDULO: MODELADO DE CAJA</h1>
-  <div style="background:rgba(30,0,50,0.8);border:1px solid var(--border);padding:20px;margin-bottom:14px">
-    <p>&gt; Contenedor centro — STATUS: ONLINE</p>
-  </div>
-  <div style="background:rgba(30,0,50,0.8);border:1px solid var(--border);padding:20px;margin-bottom:14px">
-    <p>&gt; Contenedor izquierda — STATUS: ONLINE</p>
-  </div>
-  <div style="background:rgba(30,0,50,0.8);border:1px solid var(--border);padding:20px;margin-bottom:14px">
-    <p>&gt; Contenedor derecha — STATUS: ONLINE</p>
-  </div>
-  <div style="background:rgba(30,0,50,0.9);border:1px solid rgba(212,0,255,0.4);padding:24px">
-    <h2>&gt; CONTENEDOR PADRE</h2>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px">
-      <div style="border:1px dashed rgba(212,0,255,0.35);padding:16px;text-align:center"><h3>HIJO [A]</h3></div>
-      <div style="border:1px dashed rgba(212,0,255,0.35);padding:16px;text-align:center"><h3>HIJO [B]</h3></div>
-    </div>
-  </div>
-</main>
-<script src="matrix.js"></script>
+    <header>
+        <img src="./img/images.png" alt="">
+        <h1>Introduccion etiquetas HTML</h1>
+        <nav>
+            <a href="contenedor.html">Contenedor</a>
+            <a href="lista.html">Listas</a>
+            <a href="tabla.html">Tablas</a>
+            <a href="formulario.html">Formulario</a>
+            <a href="boostrap.html">Boostrap</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="index.html">Inicio</a>
+        </nav>
+    </header>
+    
+    <form>
+        <h1>Formulario </h1>
+        <label for="">Nombre</label>
+        <input type="text" placeholder="NOMBRE"><br>
+        <label for="">Apellido</label>
+        <input type="text" placeholder="Apellido"><br>
+        <label for="">Edad</label>
+        <input type="text"><br>
+        <label for="">Email</label>
+        <input type="email" name="" id=""><br>
+        <label for="">Fecha de nacimiento</label>
+        <input type="datetime-local" name="" id=""><br>
+        <label for="">Genero</label>
+        <input type="checkbox" name="" id="">Masculino
+        <input type="checkbox" name="" id="">Femenino
+        <br>
+        <label for="">Programador</label>
+        <select name="" id="">
+            <option value="">Eliga una opcion</option>
+            <option value="">Des FRONTEND</option>
+            <option value="">Des BACKEND</option>
+            <option value="">Lider de equipo</option>
+            <option value="">Senior PYTHON</option>
+        </select><br><br>
+        <button type="button" value="Guardar">Guardar
+        
+    </form>
+
 </body>
 </html>
