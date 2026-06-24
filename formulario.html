@@ -1,83 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <title>Formulario — Curso HTML</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <style>
-        form{
-            background-color: gray;
-            margin-left: 500px;
-            width: 350px;
-            height: 250px;
-            margin-top: 15px;
-            border: 2px solid white;
-            box-shadow: 0 5px 8px black;
-        }
-
-        form h1{
-            color: wheat;
-            text-align: center;
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
-        }
-
-        form label{
-            color:wheat;
-        }
-
-        form button{
-            background-color: orangered;
-            color: white;
-            font-size: 20px;
-            margin-left: 100px;
-            padding: 5px;
-        }
-    
-    </style>
 </head>
 <body>
-    <header>
-        <img src="./img/images.png" alt="">
-        <h1>Introduccion etiquetas HTML</h1>
-        <nav>
-            <a href="contenedor.html">Contenedor</a>
-            <a href="lista.html">Listas</a>
-            <a href="tabla.html">Tablas</a>
-            <a href="formulario.html">Formulario</a>
-            <a href="boostrap.html">Boostrap</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="index.html">Inicio</a>
-        </nav>
-    </header>
-    
-    <form>
-        <h1>Formulario </h1>
-        <label for="">Nombre</label>
-        <input type="text" placeholder="NOMBRE"><br>
-        <label for="">Apellido</label>
-        <input type="text" placeholder="Apellido"><br>
-        <label for="">Edad</label>
-        <input type="text"><br>
-        <label for="">Email</label>
-        <input type="email" name="" id=""><br>
-        <label for="">Fecha de nacimiento</label>
-        <input type="datetime-local" name="" id=""><br>
-        <label for="">Genero</label>
-        <input type="checkbox" name="" id="">Masculino
-        <input type="checkbox" name="" id="">Femenino
-        <br>
-        <label for="">Programador</label>
-        <select name="" id="">
-            <option value="">Eliga una opcion</option>
-            <option value="">Des FRONTEND</option>
-            <option value="">Des BACKEND</option>
-            <option value="">Lider de equipo</option>
-            <option value="">Senior PYTHON</option>
-        </select><br><br>
-        <button type="button" value="Guardar">Guardar
-        
-    </form>
 
+<canvas id="matrix-canvas"></canvas>
+
+<div class="topbar">
+    <img src="./img/images.png" alt="logo" onerror="this.style.display='none'">
+    <span class="topbar-title">// CURSO_HTML — MÓDULO_FORMULARIO</span>
+    <nav class="topbar-nav">
+        <a href="contenedor.html">Contenedor</a>
+        <a href="lista.html">Listas</a>
+        <a href="tabla.html">Tablas</a>
+        <a href="formulario.html" class="active">Formulario</a>
+        <a href="boostrap.html">Bootstrap</a>
+        <a href="Portafolio.html">Portafolio</a>
+        <a href="index.html">Inicio</a>
+    </nav>
+</div>
+
+<main>
+    <div class="prompt">formulario.html <div class="prompt-cur"></div></div>
+
+    <section>
+        <div class="section-tag">// módulo_formulario</div>
+        <div class="section-header"><h2>> FORMULARIO</h2></div>
+
+        <div class="form-terminal reveal">
+            <div class="form-topbar">
+                <span class="form-topbar-dot"></span><span class="form-topbar-dot"></span><span class="form-topbar-dot"></span>
+                <span class="form-topbar-title">// formulario_demo.sh</span>
+            </div>
+
+            <form class="form-body" onsubmit="return false;">
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label class="form-label">// nombre</label>
+                        <input class="form-input" type="text" placeholder="NOMBRE">
+                    </div>
+                    <div class="form-field">
+                        <label class="form-label">// apellido</label>
+                        <input class="form-input" type="text" placeholder="APELLIDO">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label class="form-label">// edad</label>
+                        <input class="form-input" type="text" placeholder="00">
+                    </div>
+                    <div class="form-field">
+                        <label class="form-label">// email</label>
+                        <input class="form-input" type="email" placeholder="usuario@dominio.com">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label class="form-label">// fecha_de_nacimiento</label>
+                        <input class="form-input" type="datetime-local">
+                    </div>
+                    <div class="form-field">
+                        <label class="form-label">// programador</label>
+                        <select class="form-input form-select">
+                            <option value="">Eliga una opción</option>
+                            <option value="">Des FRONTEND</option>
+                            <option value="">Des BACKEND</option>
+                            <option value="">Líder de equipo</option>
+                            <option value="">Senior PYTHON</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label class="form-label">// género</label>
+                    <div class="form-checkbox-group">
+                        <label class="form-checkbox-label">
+                            <input type="checkbox" class="form-checkbox">
+                            <span class="form-checkbox-custom"></span>
+                            Masculino
+                        </label>
+                        <label class="form-checkbox-label">
+                            <input type="checkbox" class="form-checkbox">
+                            <span class="form-checkbox-custom"></span>
+                            Femenino
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <span class="form-prompt-pre">root@curso:~$</span>
+                    <button type="button" class="form-submit">guardar.sh →</button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-text">// CURSO_HTML — <a href="index.html">[Inicio]</a></div>
+    <div id="clock"></div>
+    <div class="footer-text">HTML · CSS · JS</div>
+</footer>
+
+<script src="matrix.js"></script>
 </body>
 </html>
